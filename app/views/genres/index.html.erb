@@ -1,0 +1,7 @@
+<h1> genre index view </h1>
+
+<% @genres.each do |genre| %>
+  <%= genre.name %>
+  <%= link_to 'Show', genre_path(genre) %>
+  <%= link_to 'Edit', edit_genre_path(genre) %>
+<% end %>

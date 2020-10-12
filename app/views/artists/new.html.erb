@@ -1,0 +1,14 @@
+<h1> artist new view </h1>
+
+<%= form_for(@artist) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :lbio %>
+  <%= f.text_area :bio %>
+
+  <%= f.submit %>
+
+  <% end %> 
+
+  <%= link_to "Return to artist index page", artists_path %> 

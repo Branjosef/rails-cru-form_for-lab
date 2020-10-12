@@ -1,0 +1,7 @@
+<h1> song index view </h1>
+
+<% @songs.each do |song| %>
+ <p> <%= song.name %></p>
+  <%= link_to 'Show', song_path(song) %>
+  <%= link_to 'Edit', edit_song_path(song) %>
+<% end %>
